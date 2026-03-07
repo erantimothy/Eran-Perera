@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Fraunces, DM_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -96,6 +97,7 @@ export default function RootLayout({
         className={`${jetbrainsMono.variable} ${fraunces.variable} ${dmSans.variable} antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
