@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eran Timothy Perera — Portfolio
+
+Personal portfolio website for [Eran Timothy Perera](https://erantimothy.dev) — software engineering student and developer based in Sri Lanka. Built with Next.js, Tailwind CSS, and Framer Motion.
+
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Styling | Tailwind CSS v4 |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| Fonts | JetBrains Mono · Fraunces · DM Sans |
+| Email | Mailjet (node-mailjet) |
+| Language | TypeScript |
+
+## Project Structure
+
+```
+app/
+  globals.css          # Design tokens, CSS custom properties, noise texture
+  layout.tsx           # Root layout — fonts, SEO metadata, OG tags
+  page.tsx             # Single-page composition
+  api/
+    contact/
+      route.ts         # POST /api/contact — Mailjet email handler
+components/
+  Nav.tsx              # Sticky frosted-glass navigation
+  Hero.tsx             # Full-height hero with staggered reveal
+  Projects.tsx         # Card grid with featured highlight
+  Blog.tsx             # Post list with platform badges
+  Timeline.tsx         # Vertical timeline — experience, education, certifications
+  Skills.tsx           # Tag cloud grouped by category
+  Awards.tsx           # Awards and activities grid
+  Contact.tsx          # Contact form with validation and success/error states
+  Footer.tsx           # Social links and credits
+public/
+  favicon.svg          # Terminal-style favicon
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` or `.env.local` file in the project root:
 
-## Learn More
+```bash
+MJ_APIKEY_PUBLIC=your_mailjet_public_key
+MJ_APIKEY_PRIVATE=your_mailjet_private_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+Get your keys from [app.mailjet.com/account/apikeys](https://app.mailjet.com/account/apikeys).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Both `.env` and `.env.local` are covered by `.gitignore` — neither will be committed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+```bash
+npm run dev      # Development server with Turbopack
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # ESLint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site is a standard Next.js App Router project and deploys to any platform that supports Node.js — Vercel, Railway, Fly.io, etc.
+
+When deploying, set `MJ_APIKEY_PUBLIC` and `MJ_APIKEY_PRIVATE` as environment variables in your hosting provider's dashboard.
+
+

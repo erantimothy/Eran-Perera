@@ -1,0 +1,79 @@
+# Eran Timothy Perera
+
+> Software engineering student and developer based in Colombo, Sri Lanka.
+> Builds full-stack systems, DevOps pipelines, and AI-integrated applications.
+
+## About
+
+Eran Timothy Perera is a BSc Software Engineering student at the University of Westminster (via Informatics Institute of Technology, Sri Lanka). He designs and ships production-grade systems across the full stack — from database schemas and REST/WebSocket APIs to CI/CD pipelines and cloud deployments.
+
+- Email: erantimothy@gmail.com
+- GitHub: https://github.com/EranTimothy-dev
+- LinkedIn: https://linkedin.com/in/erantimothy
+- Website: https://erantimothy.dev
+
+## Projects
+
+### CorpoVinculo (Featured)
+Multi-tenant web platform for event organizers to manage industry outreach and sponsorships. Hybrid monolithic/microservice architecture.
+Tech: NestJS, Next.js, FastAPI, PostgreSQL, Gemini AI, Cloudflare R2, Cloudflare Workers, TanStack Query, Redux
+Live: https://corpovinculo.com
+GitHub: https://github.com/CorpoVinculo
+
+### YouTube Video & Audio Downloader
+Python application for downloading YouTube video and audio with flexible quality options. REST APIs and WebSocket support for async download handling.
+Tech: FastAPI, FFmpeg, yt-dlp, WebSockets, Python
+GitHub: https://github.com/EranTimothy-dev/YT_VAD-Backend
+
+### Summer Internship Platform
+Full-stack web platform for the Rizing summer internship program. Backend development, CI/CD setup, and cloud deployment.
+Tech: Spring Boot, Spring Cloud, Spring Security, AWS DynamoDB, Cloudflare R2, Azure Container Registry, Azure Container Apps
+
+### ShiftSL
+Invited contributor. Comprehensive test suites and codebase refactoring.
+Tech: Spring Boot, JUnit, Mockito, Java
+GitHub: https://github.com/ShiftSL
+
+### Lottery Management System
+Full-stack system for CPN & Sons Pvt Ltd to manage lottery stocks and vendor distribution.
+Tech: Spring Boot, Next.js, Supabase, Spring Security
+
+## Blog
+
+- Managing Custom and Self-Signed SSL/TLS Certificates in MSYS2 UCRT64 — https://medium.com/@eran.perera2010/managing-custom-and-self-signed-ssl-tls-certs-in-msys2-ucrt64-8220a7ab8794
+- Design Patterns in Java — https://medium.com/@eran.perera2010/design-patterns-in-java-b38338b9d32a
+- Prompt Compression and Query Optimization — https://erantimothyblogs.notion.site/Prompt-Compression-and-Query-Optimization-1e728ea35fa280bda3ecec58a310e2e4
+- Software Testing in Java with JUnit — https://erantimothyblogs.notion.site/Software-Testing-in-Java-with-JUnit-18228ea35fa2805bba71f21a0b93b7b7
+- Introduction to Agile — https://erantimothyblogs.notion.site/Introduction-to-Agile-29128ea35fa280649d1cc463758b65e8
+
+## Skills
+
+Languages: JavaScript, TypeScript, Java, Python, Lua
+Frameworks: React, Next.js, Spring Boot, NestJS, FastAPI
+Infrastructure & DevOps: AWS, Azure, Docker, Git, GitHub Actions, Linux, Cloudflare
+Databases: PostgreSQL, MongoDB, MySQL, DynamoDB, AWS S3, Cloudflare R2
+
+## Experience
+
+- Summer Intern, Rizing Consumer Industries (July 2025 – August 2025)
+  SAP ERP fundamentals, cross-functional CSR project, presentations to senior mentors.
+
+## Education
+
+- BSc Software Engineering, University of Westminster via IIT — Ongoing
+- Foundation Certificate in Higher Education, IIT — Distinction
+- G.C.E. Ordinary Level, S. Thomas' College Mount Lavinia — Completed
+
+## Certifications
+
+- Java & OOP Certification — STEM Link
+- Docker Foundations Professional Certificate — LinkedIn Learning (accredited by Docker, Inc.)
+- Azure AI Fundamentals (AI-900) — Microsoft
+- Atlassian Agile Project Management Professional — LinkedIn Learning
+- Python for Beginners — University of Moratuwa
+- Web Design for Beginners — University of Moratuwa
+
+## Awards
+
+- Best Team Pitch Award — Pitch60 2026
+- Finalist — PitchPerfect 2.0 (2025)
