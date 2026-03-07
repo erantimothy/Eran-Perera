@@ -21,31 +21,67 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600"],
 });
 
+const title = "Eran Timothy Perera | Software Engineer";
+const description =
+  "Portfolio of Eran Timothy Perera — software engineering student and developer specializing in full-stack systems, DevOps, and AI-integrated applications.";
+const url = "https://erantimothy.dev";
+
 export const metadata: Metadata = {
-  title: "Eran Timothy Perera | Software Engineer",
-  description:
-    "Portfolio of Eran Timothy Perera — software engineering student and developer specializing in full-stack systems, DevOps, and AI-integrated applications.",
-  metadataBase: new URL("https://erantimothy.dev"),
+  title,
+  description,
+  metadataBase: new URL(url),
+  keywords: [
+    "Eran Timothy Perera",
+    "software engineer",
+    "full-stack developer",
+    "Next.js",
+    "TypeScript",
+    "Spring Boot",
+    "DevOps",
+    "Sri Lanka",
+    "portfolio",
+  ],
+  authors: [{ name: "Eran Timothy Perera", url }],
+  creator: "Eran Timothy Perera",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
     type: "website",
-    url: "https://erantimothy.dev",
-    title: "Eran Timothy Perera | Software Engineer",
-    description:
-      "Portfolio of Eran Timothy Perera — software engineering student and developer specializing in full-stack systems, DevOps, and AI-integrated applications.",
+    url,
+    title,
+    description,
     siteName: "Eran Timothy Perera",
+    locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eran Timothy Perera | Software Engineer",
-    description:
-      "Portfolio of Eran Timothy Perera — software engineering student and developer specializing in full-stack systems, DevOps, and AI-integrated applications.",
+    title,
+    description,
+    creator: "@erantimothy",
+    images: ["/opengraph-image"],
   },
   alternates: {
-    canonical: "https://erantimothy.dev",
+    canonical: url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
