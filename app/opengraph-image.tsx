@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Eran Timothy Perera | Software Engineer";
+export const alt = "Eran Timothy Perera | Software Engineer · Sri Lanka";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -10,13 +10,13 @@ export default function OGImage() {
     (
       <div
         style={{
+          background: "#0a0a0a",
           width: "100%",
           height: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          backgroundColor: "#0a0a0a",
-          padding: "64px",
+          padding: "72px 80px",
           fontFamily: "monospace",
           position: "relative",
         }}
@@ -27,91 +27,77 @@ export default function OGImage() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(rgba(250,250,250,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(250,250,250,0.03) 1px, transparent 1px)",
+              "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
             backgroundSize: "80px 80px",
           }}
         />
 
-        {/* Top — terminal prompt */}
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          {/* Chevron + underline icon */}
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <polyline
-              points="4,9 10,14 4,19"
-              stroke="#f59e0b"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <line
-              x1="12"
-              y1="19"
-              x2="20"
-              y2="19"
-              stroke="#f59e0b"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-          </svg>
-          <span style={{ color: "#525252", fontSize: "18px", letterSpacing: "2px" }}>
-            etp<span style={{ color: "#f59e0b" }}>@</span>dev
-          </span>
+        {/* Top — prompt line */}
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span style={{ color: "#f59e0b", fontSize: 18 }}>▶</span>
+          <span style={{ color: "#6b7280", fontSize: 18 }}>erantimothy.dev</span>
         </div>
 
-        {/* Centre — name + tagline */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        {/* Middle — headline */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <span style={{ color: "#f59e0b", fontSize: 28 }}>$</span>
+            <span style={{ color: "#4b5563", fontSize: 24 }}>whoami</span>
+          </div>
           <div
             style={{
-              fontSize: "72px",
+              color: "#f9fafb",
+              fontSize: 72,
               fontWeight: 300,
-              color: "#fafafa",
-              letterSpacing: "-2px",
               lineHeight: 1.05,
+              letterSpacing: "-2px",
             }}
           >
-            Eran Timothy{" "}
-            <span style={{ color: "#a3a3a3" }}>Perera</span>
+            Eran Timothy Perera
           </div>
-          <div
-            style={{
-              fontSize: "24px",
-              color: "#a3a3a3",
-              fontStyle: "italic",
-              fontWeight: 300,
-            }}
-          >
-            "I build things that run quietly and reliably."
+          <div style={{ color: "#9ca3af", fontSize: 26, marginTop: 8 }}>
+            Software Engineering Student · Full-Stack · DevOps · Sri Lanka
           </div>
         </div>
 
-        {/* Bottom — URL + tags */}
+        {/* Bottom — tags + CTA */}
         <div
           style={{
             display: "flex",
-            alignItems: "center",
             justifyContent: "space-between",
+            alignItems: "flex-end",
           }}
         >
-          <span style={{ color: "#525252", fontSize: "16px", letterSpacing: "1px" }}>
-            erantimothy.dev
-          </span>
-          <div style={{ display: "flex", gap: "10px" }}>
-            {["Next.js", "TypeScript", "DevOps", "AI"].map((tag) => (
-              <span
+          <div style={{ display: "flex", gap: 12 }}>
+            {["Next.js", "Spring Boot", "NestJS", "FastAPI", "Docker"].map((tag) => (
+              <div
                 key={tag}
                 style={{
-                  fontSize: "13px",
-                  color: "#525252",
-                  border: "1px solid #262626",
-                  borderRadius: "4px",
-                  padding: "4px 10px",
-                  backgroundColor: "#111111",
+                  background: "#1a1a1a",
+                  border: "1px solid #27272a",
+                  borderRadius: 6,
+                  padding: "6px 14px",
+                  color: "#6b7280",
+                  fontSize: 16,
                   fontFamily: "monospace",
                 }}
               >
                 {tag}
-              </span>
+              </div>
             ))}
+          </div>
+          <div
+            style={{
+              background: "#f59e0b",
+              borderRadius: 8,
+              padding: "12px 28px",
+              color: "#0a0a0a",
+              fontSize: 18,
+              fontWeight: 700,
+              fontFamily: "monospace",
+            }}
+          >
+            View Portfolio →
           </div>
         </div>
       </div>

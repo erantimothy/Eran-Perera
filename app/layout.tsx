@@ -22,7 +22,7 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600"],
 });
 
-const title = "Eran Timothy Perera | Software Engineer";
+const title = "Eran Timothy Perera | Software Engineer · Sri Lanka";
 const description =
   "Portfolio of Eran Timothy Perera — software engineering student and developer specializing in full-stack systems, DevOps, and AI-integrated applications.";
 const url = "https://erantimothy.dev";
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/opengraph-image",
+        url: `${url}/opengraph-image`,
         width: 1200,
         height: 630,
         alt: title,
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title,
     description,
     creator: "@erantimothy",
-    images: ["/opengraph-image"],
+    images: [`${url}/opengraph-image`],
   },
   alternates: {
     canonical: url,
