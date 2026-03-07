@@ -75,7 +75,7 @@ export default function Hero() {
           className="font-serif text-xl sm:text-2xl font-light italic mb-8 max-w-xl"
           style={{ color: "var(--foreground-muted)" }}
         >
-          &ldquo;I build things that run quietly and reliably.&rdquo;
+          &ldquo;Live for coding, coffee, and late night builds.&rdquo;
         </motion.p>
 
         {/* Bio */}
