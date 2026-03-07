@@ -25,7 +25,7 @@ const dmSans = DM_Sans({
 const title = "Eran Timothy Perera | Software Engineer · Sri Lanka";
 const description =
   "Portfolio of Eran Timothy Perera — software engineering student and developer specializing in full-stack systems, DevOps, and AI-integrated applications.";
-const url = "https://erantimothy.dev";
+const url = "https://www.erantimothy.dev";
 
 export const metadata: Metadata = {
   title,

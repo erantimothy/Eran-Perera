@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://erantimothy.dev/sitemap.xml
+Sitemap: https://www.erantimothy.dev/sitemap.xml
