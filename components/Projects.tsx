@@ -69,6 +69,8 @@ const projects: Project[] = [
     description:
       "Full-stack lottery management system for CPN & Sons Pvt Ltd to manage stocks and vendor distribution.",
     tech: ["Spring Boot", "Next.js", "Supabase", "Spring Security"],
+    github: "https://github.com/Lottery-Project",
+    note: "ongoing project",
   },
 ];
 
