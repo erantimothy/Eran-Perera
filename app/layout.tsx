@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Eran Timothy Perera", url }],
   creator: "Eran Timothy Perera",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     type: "website",
