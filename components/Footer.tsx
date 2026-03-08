@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, Globe } from "lucide-react";
+import { Github, Linkedin, Mail, Globe, PhoneCall } from "lucide-react";
 
 const links = [
   {
@@ -19,10 +19,15 @@ const links = [
     href: "mailto:erantimothy@gmail.com",
   },
   {
-    icon: Globe,
-    label: "erantimothy.dev",
-    href: "https://erantimothy.dev",
+    icon: PhoneCall,
+    label: "Contact",
+    href: "tel:+94776283813",
   },
+  // {
+  //   icon: Globe,
+  //   label: "erantimothy.dev",
+  //   href: "https://erantimothy.dev",
+  // },
 ];
 
 export default function Footer() {

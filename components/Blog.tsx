@@ -13,7 +13,7 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    title: "Managing Custom and Self-Signed SSL/TLS Certificates in MSYS2 UCRT64",
+    title: "Managing Custom and Self-Signed SSL/TLS Certs in MSYS2 UCRT64",
     summary:
       "A practical guide to trusting custom certificate authorities in the MSYS2 UCRT64 environment for local dev workflows.",
     platform: "Medium",

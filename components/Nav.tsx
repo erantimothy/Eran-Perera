@@ -8,8 +8,9 @@ const links = [
   { href: "#blog", label: "blog" },
   { href: "#experience", label: "experience" },
   { href: "#education", label: "education" },
+  { href: "#certifications", label: "certs" },
   { href: "#skills", label: "skills" },
-  { href: "#contact", label: "contact" },
+  { href: "#awards", label: "recongnition" },
 ];
 
 export default function Nav() {
