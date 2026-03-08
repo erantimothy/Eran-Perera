@@ -277,6 +277,33 @@ export default function Projects() {
             <ProjectCard key={project.name} project={project} index={i} />
           ))}
         </div>
+
+        {/* GitHub CTA */}
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-8 font-mono text-sm text-center"
+          style={{ color: "var(--foreground-dim)" }}
+        >
+          and there&apos;s more where that came from —{" "}
+          <a
+            href="https://github.com/EranTimothy-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors duration-150"
+            style={{ color: "var(--accent)" }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.textDecoration = "underline")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.textDecoration = "none")
+            }
+          >
+            explore the rest on GitHub ↗
+          </a>
+        </motion.p>
       </div>
     </section>
   );

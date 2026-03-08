@@ -76,26 +76,51 @@ export default function Nav() {
           ))}
         </ul>
 
-        {/* Contact CTA */}
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center gap-2 font-mono text-xs px-4 py-2 rounded border transition-all duration-150"
-          style={{
-            borderColor: "var(--accent-border)",
-            color: "var(--accent)",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "var(--accent-muted)";
-            e.currentTarget.style.borderColor = "var(--accent)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "transparent";
-            e.currentTarget.style.borderColor = "var(--accent-border)";
-          }}
-          aria-label="Go to contact section"
-        >
-          get in touch
-        </a>
+        {/* Desktop CTAs */}
+        <div className="hidden md:flex items-center gap-2">
+          <a
+            href="/EranCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-xs px-4 py-2 rounded border transition-all duration-150"
+            style={{
+              borderColor: "var(--border)",
+              color: "var(--foreground-dim)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "var(--foreground)";
+              e.currentTarget.style.borderColor = "var(--foreground-dim)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "var(--foreground-dim)";
+              e.currentTarget.style.borderColor = "var(--border)";
+            }}
+            aria-label="View CV"
+          >
+            cv
+          </a>
+
+          {/* Contact CTA */}
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 font-mono text-xs px-4 py-2 rounded border transition-all duration-150"
+            style={{
+              borderColor: "var(--accent-border)",
+              color: "var(--accent)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "var(--accent-muted)";
+              e.currentTarget.style.borderColor = "var(--accent)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+              e.currentTarget.style.borderColor = "var(--accent-border)";
+            }}
+            aria-label="Go to contact section"
+          >
+            get in touch
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -150,7 +175,7 @@ export default function Nav() {
                 </a>
               </li>
             ))}
-            <li className="pt-2">
+            <li className="pt-2 flex items-center gap-4">
               <a
                 href="#contact"
                 className="font-mono text-sm"
@@ -158,6 +183,16 @@ export default function Nav() {
                 onClick={() => setMenuOpen(false)}
               >
                 get in touch →
+              </a>
+              <a
+                href="/EranCV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-sm"
+                style={{ color: "var(--foreground-dim)" }}
+                onClick={() => setMenuOpen(false)}
+              >
+                view cv ↗
               </a>
             </li>
           </ul>
