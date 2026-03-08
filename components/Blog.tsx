@@ -45,7 +45,7 @@ const posts: BlogPost[] = [
     summary:
       "Core Agile principles, Scrum ceremonies, sprint planning, and how iterative delivery improves software teams.",
     platform: "Notion",
-    href: "https://erantimothyblogs.notion.site/Introduction-to-Agile-29128ea35fa280649d1cc463758b65e8",
+    href: "https://medium.com/@eran.perera2010/introduction-to-agile-99e5e1f38b01",
   },
 ];
 
