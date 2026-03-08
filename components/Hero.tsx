@@ -42,6 +42,17 @@ export default function Hero() {
     fetchStats();
   }, []);
 
+  const floatingIcons = [
+    { src: "/hero_images/docker_icon-removebg-preview.png",        alt: "Docker",  size: 80,  top: "6%",  left: "8%",  duration: 5.5, delay: 0.0 },
+    { src: "/hero_images/fastapi.svg",                            alt: "FastAPI", size: 66,  top: "8%",  left: "52%", duration: 4.6, delay: 0.9 },
+    { src: "/hero_images/linux-logo-removebg-preview.png",        alt: "Linux",   size: 76,  top: "32%", left: "65%", duration: 6.2, delay: 1.3 },
+    { src: "/hero_images/nestjs-logo-removebg-preview.png",       alt: "NestJS",  size: 100, top: "58%", left: "18%", duration: 7.0, delay: 0.5 },
+    { src: "/hero_images/nextjs-removebg-preview.png",            alt: "Next.js", size: 76,  top: "22%", left: "28%", duration: 5.1, delay: 1.7 },
+    { src: "/hero_images/spring-logo.png",                        alt: "Spring",  size: 70,  top: "66%", left: "56%", duration: 6.6, delay: 0.3 },
+    { src: "/hero_images/Windows_Subsystem_for_Linux_logo.png",   alt: "WSL",     size: 62,  top: "72%", left: "2%",  duration: 4.9, delay: 1.1 },
+    { src: "/hero_images/vim-logo-removebg-preview.png",          alt: "Vim",     size: 70,  top: "44%", left: "0%",  duration: 5.9, delay: 1.9 },
+  ];
+
   return (
     <section
       id="top"
@@ -61,7 +72,12 @@ export default function Hero() {
 
       <div className="mx-auto max-w-6xl w-full relative">
 
-        {/* ── Hero text content ── */}
+        {/* ── Two-column row: text left · floating icons right ── */}
+        <div className="flex flex-col lg:flex-row lg:items-center gap-8">
+
+          {/* Left column: hero text */}
+          <div className="flex-1 min-w-0">
+
           {/* Name */}
           <motion.h1
             custom={1}
@@ -189,6 +205,29 @@ export default function Hero() {
               ))}
             </div>
           </motion.div>
+
+          </div>{/* end left column */}
+
+          {/* Right column: floating tech icons */}
+          <div
+            className="hidden lg:block relative flex-shrink-0"
+            style={{ width: 460, height: 420 }}
+            aria-hidden="true"
+          >
+            {floatingIcons.map(({ src, alt, size, top, left, duration, delay }) => (
+              <motion.img
+                key={src}
+                src={src}
+                alt={alt}
+                className="absolute select-none"
+                style={{ top, left, width: size, height: size, objectFit: "contain" }}
+                animate={{ y: [0, -16, 0] }}
+                transition={{ duration, delay, repeat: Infinity, ease: "easeInOut" }}
+              />
+            ))}
+          </div>
+
+        </div>{/* end two-column row */}
 
         {/* ── GitHub Contributions Calendar + Stats ── */}
         <motion.div
