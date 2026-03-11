@@ -35,6 +35,13 @@ const projects: Project[] = [
     featured: true,
   },
   {
+    name: "GitHub Activity CLI/TUI Tool",
+    description:
+      "Command-line and terminal-based tool for visualizing and interacting with GitHub activity data.",
+    tech: ["C++", "CMake", "CLI11", "libcurl", "json(nlohmann)", "GitHub API"],
+    github: "https://github.com/EranTimothy-dev/gh-activity",
+  },
+  {
     name: "YouTube Video & Audio Downloader",
     description:
       "Python application for downloading YouTube video and audio with flexible quality options. Includes REST APIs and WebSocket support for asynchronous download handling.",
@@ -63,14 +70,6 @@ const projects: Project[] = [
     tech: ["Spring Boot", "JUnit", "Mockito", "Java"],
     github: "https://github.com/ShiftSL",
     note: "invited contributor",
-  },
-  {
-    name: "Lottery Management System",
-    description:
-      "Full-stack lottery management system for CPN & Sons Pvt Ltd to manage stocks and vendor distribution.",
-    tech: ["Spring Boot", "Next.js", "Supabase", "Spring Security"],
-    github: "https://github.com/Lottery-Project",
-    note: "ongoing project",
   },
 ];
 
