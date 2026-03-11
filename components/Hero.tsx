@@ -289,7 +289,7 @@ export default function Hero() {
 
             {/* Stats */}
             <div
-              className="hidden lg:flex flex-row justify-center gap-8 pl-10 flex-shrink-0 border-l"
+              className="flex flex-col justify-center gap-8 mt-6 border-none lg:flex flex-row justify-center gap-8 pl-10 flex-shrink-0 border-l"
               style={{ borderColor: "var(--border)" }}
             >
               {[
