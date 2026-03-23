@@ -24,7 +24,8 @@ const timelineData: TimelineItem[] = [
     details: [
       "Gained exposure to SAP ERP fundamentals and their applications in the fashion industry.",
       "Presented learnings and recommendations to senior mentors.",
-      "Collaborated cross-functionally on a CSR project spanning IT, business, and hospitality sectors.",
+      "Collaborated cross-functionally on a CSR project.", 
+      "Attended professional development sessions spanning IT, business, and hospitality sectors.",
     ],
   },
   // Education
