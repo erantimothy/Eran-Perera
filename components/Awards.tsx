@@ -14,6 +14,14 @@ const awards = [
     border: "var(--accent-border)",
   },
   {
+    icon: Trophy,
+    label: "3rd Place",
+    context: "StartUp Today '26",
+    color: "var(--accent)",
+    bg: "var(--accent-muted)",
+    border: "var(--accent-border)",
+  },
+  {
     icon: Medal,
     label: "Finalist",
     context: "PitchPerfect 2.0 · 2025",
