@@ -39,14 +39,14 @@ const projects: Project[] = [
     description:
       "Command-line and terminal-based tool for visualizing and interacting with GitHub activity data.",
     tech: ["C++", "CMake", "CLI11", "libcurl", "json(nlohmann)", "GitHub API"],
-    github: "https://github.com/EranTimothy-dev/gh-activity",
+    github: "https://github.com/erantimothy/gh-activity",
   },
   {
     name: "YouTube Video & Audio Downloader",
     description:
       "Python application for downloading YouTube video and audio with flexible quality options. Includes REST APIs and WebSocket support for asynchronous download handling.",
     tech: ["FastAPI", "FFmpeg", "yt-dlp", "WebSockets", "Python"],
-    github: "https://github.com/EranTimothy-dev/YT_VAD-Backend",
+    github: "https://github.com/erantimothy/YT_VAD-Backend",
   },
   {
     name: "Summer Internship Platform",
@@ -288,7 +288,7 @@ export default function Projects() {
         >
           and there&apos;s more where that came from —{" "}
           <a
-            href="https://github.com/EranTimothy-dev"
+            href="https://github.com/erantimothy"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors duration-150"

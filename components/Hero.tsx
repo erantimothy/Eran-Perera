@@ -26,8 +26,8 @@ export default function Hero() {
     async function fetchStats() {
       try {
         const [userRes, reposRes] = await Promise.all([
-          fetch("https://api.github.com/users/EranTimothy-dev"),
-          fetch("https://api.github.com/users/EranTimothy-dev/repos?per_page=100"),
+          fetch("https://api.github.com/users/erantimothy"),
+          fetch("https://api.github.com/users/erantimothy/repos?per_page=100"),
         ]);
         const user = await userRes.json();
         const repos = await reposRes.json();
@@ -170,7 +170,7 @@ export default function Hero() {
             <div className="flex items-center gap-3 ml-2">
               {[
                 {
-                  href: "https://github.com/EranTimothy-dev",
+                  href: "https://github.com/erantimothy",
                   icon: Github,
                   label: "GitHub profile",
                 },
@@ -247,7 +247,7 @@ export default function Hero() {
               github contributions
             </p>
             <a
-              href="https://github.com/EranTimothy-dev"
+              href="https://github.com/erantimothy"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-mono text-xs transition-colors duration-150"
@@ -256,7 +256,7 @@ export default function Hero() {
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--foreground-dim)")}
             >
               <Github size={12} aria-hidden="true" />
-              EranTimothy-dev
+              erantimothy
             </a>
           </div>
 
@@ -266,7 +266,7 @@ export default function Hero() {
             {/* Calendar */}
             <div className="overflow-x-auto flex-1 min-w-0">
               <GitHubCalendar
-                username="EranTimothy-dev"
+                username="erantimothy"
                 colorScheme="dark"
                 theme={{
                   dark: [
