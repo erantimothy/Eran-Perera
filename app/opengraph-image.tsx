@@ -4,7 +4,6 @@ export const runtime = "edge";
 export const alt = "Eran Timothy Perera | Software Engineer · Sri Lanka";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-const faviconSrc = new URL("./favicon.svg", import.meta.url).toString();
 
 export default function OGImage() {
   return new ImageResponse(
@@ -35,7 +34,17 @@ export default function OGImage() {
 
         {/* Top — prompt line */}
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <img src={faviconSrc} alt="favicon" width={18} height={18} />
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#0a0a0a" />
+            <polyline
+              points="7,11 13,16 7,21"
+              stroke="#f59e0b"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <line x1="15" y1="21" x2="25" y2="21" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round" />
+          </svg>
           <span style={{ color: "#6b7280", fontSize: 18 }}>erantimothy.dev</span>
         </div>
 
