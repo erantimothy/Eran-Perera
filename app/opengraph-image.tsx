@@ -4,6 +4,7 @@ export const runtime = "edge";
 export const alt = "Eran Timothy Perera | Software Engineer · Sri Lanka";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+const faviconSrc = new URL("./favicon.svg", import.meta.url).toString();
 
 export default function OGImage() {
   return new ImageResponse(
@@ -34,7 +35,7 @@ export default function OGImage() {
 
         {/* Top — prompt line */}
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span style={{ color: "#f59e0b", fontSize: 18 }}>▶</span>
+          <img src={faviconSrc} alt="favicon" width={18} height={18} />
           <span style={{ color: "#6b7280", fontSize: 18 }}>erantimothy.dev</span>
         </div>
 
